@@ -124,7 +124,6 @@ export const categorias = [
       },
     ],
   },
-  {
     id: "pan",
     nombre: "Para acompañar",
     descripcion: "Horneado en casa, todos los días.",
