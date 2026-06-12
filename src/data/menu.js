@@ -152,5 +152,5 @@ export const categorias = [
       },
       { nombre: "Muffin del día", precio: 40, nota: "Sabor según temporada" },
     ],
-  },
+  ,
 ];
