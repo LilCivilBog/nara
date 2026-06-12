@@ -124,6 +124,8 @@ export const categorias = [
       },
     ],
   },
+
+  {
     id: "pan",
     nombre: "Para acompañar",
     descripcion: "Horneado en casa, todos los días.",
@@ -152,5 +154,5 @@ export const categorias = [
       },
       { nombre: "Muffin del día", precio: 40, nota: "Sabor según temporada" },
     ],
-  ,
+  },
 ];
