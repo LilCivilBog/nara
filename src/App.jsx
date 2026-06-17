@@ -20,7 +20,7 @@ export default function App() {
       </main>
       <footer className="footer">
         <p>NARA · Un respiro con sabor</p>
-        <p className="footer-small">Fresnillo, Zacatecas · {new Date().getFullYear()}</p>
+        <p className="footer-small">Calera, Zacatecas · {new Date().getFullYear()}</p>
       </footer>
     </>
   )

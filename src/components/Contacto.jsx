@@ -1,7 +1,7 @@
 // CONTACTO
 // Cambia estos datos por los reales de la cafetería.
 const datos = {
-  direccion: 'Calle Ejemplo #123, Centro, Fresnillo, Zacatecas',
+  direccion: 'Calle Ejemplo #123, Centro, Calera, Zacatecas',
   horario: [
     { dias: 'Lunes a viernes', horas: '8:00 – 21:00' },
     { dias: 'Sábado y domingo', horas: '9:00 – 22:00' },
@@ -22,7 +22,7 @@ export default function Contacto() {
           <p>{datos.direccion}</p>
           <a
             className="boton boton-secundario"
-            href={`https://www.google.com/maps/search/${encodeURIComponent('NARA cafetería Fresnillo Zacatecas')}`}
+            href={`https://www.google.com/maps/search/${encodeURIComponent('NARA cafetería Calera Zacatecas')}`}
             target="_blank"
             rel="noopener noreferrer"
           >

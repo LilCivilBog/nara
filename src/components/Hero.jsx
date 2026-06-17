@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="hero-contenido">
-        <p className="eyebrow">Cafetería · Fresnillo, Zacatecas</p>
+        <p className="eyebrow">Cafetería · Calera, Zacatecas</p>
         <h1>
           Un respiro
           <br />
