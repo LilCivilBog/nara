@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { categorias } from '../data/menu.js'
 
-// El menú lee los datos de src/data/menu.js y los pinta automáticamente.
-// useState guarda qué categoría está seleccionada (pestañas).
 export default function Menu() {
   const [activa, setActiva] = useState(categorias[0].id)
   const categoriaActiva = categorias.find((cat) => cat.id === activa)
@@ -12,7 +10,6 @@ export default function Menu() {
       <p className="eyebrow">Menú</p>
       <h2>Lo que servimos</h2>
 
-      {/* Pestañas de categorías */}
       <div className="menu-tabs" role="tablist">
         {categorias.map((cat) => (
           <button
@@ -29,15 +26,29 @@ export default function Menu() {
 
       <p className="menu-descripcion">{categoriaActiva.descripcion}</p>
 
+      {categoriaActiva.tamaños && (
+        <div className="menu-tamaños">
+          <span>Ch</span>
+          <span>G</span>
+        </div>
+      )}
+
       <ul className="menu-lista">
         {categoriaActiva.items.map((item) => (
           <li key={item.nombre} className="menu-item">
             <div>
               <span className="menu-nombre">{item.nombre}</span>
-              <span className="menu-nota">{item.nota}</span>
+              {item.nota && <span className="menu-nota">{item.nota}</span>}
             </div>
             <span className="menu-puntos" aria-hidden="true"></span>
-            <span className="menu-precio">${item.precio}</span>
+            {item.precio != null ? (
+              <span className="menu-precio">${item.precio}</span>
+            ) : (
+              <span className="menu-precio-doble">
+                <span>${item.precioCh}</span>
+                {item.precioG != null && <span>${item.precioG}</span>}
+              </span>
+            )}
           </li>
         ))}
       </ul>

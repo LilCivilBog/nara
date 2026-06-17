@@ -294,6 +294,29 @@ section {
   color: var(--terracota);
 }
 
+.menu-precio-doble {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.2rem;
+  color: var(--terracota);
+  min-width: 5.5rem;
+  justify-content: flex-end;
+}
+
+.menu-tamaños {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+  min-width: 5.5rem;
+  margin-left: auto;
+  max-width: 6rem;
+}
+
 .menu-pie {
   margin-top: 2rem;
   font-size: 0.85rem;
