@@ -4,12 +4,10 @@
 // 2. Escribe el nombre del archivo en "src" de cada foto aquí abajo.
 // Si "src" está vacío (''), se muestra un espacio decorativo en su lugar.
 const fotos = [
-  { src: 'barra.jpg', alt: 'Barra de café', etiqueta: 'La barra' },
-  { src: 'latte-art.jpg', alt: 'Latte con arte en la espuma', etiqueta: 'Arte latte' },
-  { src: 'interior.jpg', alt: 'Interior de la cafetería', etiqueta: 'El espacio' },
-  { src: 'pan.jpg', alt: 'Pan recién horneado', etiqueta: 'Horneado en casa' },
-  { src: 'respiro.jpg', alt: 'Mesa con café y libro', etiqueta: 'Un respiro' },
-  { src: 'fachada.jpg', alt: 'Fachada de NARA', etiqueta: 'Encuéntranos' },
+  { src: 'respiro.jpg', alt: 'Vaso NARA con frase motivacional', etiqueta: 'Un respiro' },
+  { src: 'latte-art.jpg', alt: 'Preparación de café helado NARA', etiqueta: 'Arte latte' },
+  { src: 'barra.jpg', alt: 'Croissant y café helado NARA', etiqueta: 'Nuestro menú' },
+  { src: 'interior.jpg', alt: 'Interior del local NARA', etiqueta: 'El espacio' },
 ]
 
 export default function Galeria() {
